@@ -32,3 +32,26 @@ The setup process includes downloading, installing, and running the models local
    curl -X POST http://localhost:11434/api/chat -H "Content-Type: application/json" -d "{\"model\": \"llama3\", \"messages\": [{\"role\": \"user\", \"content\": \"Why is the sky blue?\"}], \"stream\": false}"
 
 
+### Setting Up Gemma:2b
+
+1. **Assuming you have already downlaoded and installed OllamaSetup.exe file**, run the gemma:2b model
+3. **Start the Model**:
+   - On Windows:
+     ```sh
+     ollama run gemma:2b
+     ```
+   - On macOS:
+     ```sh
+     /Applications/Ollama.app/Contents/MacOS/Ollama run gemma:2b
+     ```
+
+4. **Verify the Setup**: Use the following `curl` command in Command Prompt to verify that the model is running correctly:
+   ```sh
+  curl -X POST http://localhost:11435/api/chat -H "Content-Type: application/json" -d "{\"model\": \"gemma:2b\", \"messages\": [{\"role\": \"user\", \"content\": \"What is the capital of France?\"}], \"stream\": false}"
+
+
+### License
+This project is licensed under the MIT License.
+
+##Author
+Dristi Dani
