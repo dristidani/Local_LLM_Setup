@@ -7,19 +7,28 @@ The setup process includes downloading, installing, and running the models local
 1. Llama3
 2. Gemma:2B
 
-## Repository Contents
-- `llama3_setup.md`: Instructions for setting up and running the Llama3 model.
-- `gemma2b_setup.md`: Instructions for setting up and running the Gemma:2B model.
-- `curl_commands.md`: Examples of interacting with the models using the `curl` command.
-
 ## Getting Started
-1. Follow the setup instructions for each model in their respective markdown files.
-2. Use the `curl` commands detailed in `curl_commands.md` to interact with the models.
 
-## Requirements
+### Requirements
 - Windows or macOS
 - curl (installed by default on macOS, can be installed on Windows)
 
-## License
-This project is licensed under the MIT License.
+### Setting Up Llama3
+
+1. **Download Llama3**: Follow the download link for your system from the [Ollama Llama3 GitHub repository](https://github.com/Ollama/llama3)(https://ollama.com/download/OllamaSetup.exe).
+2. **Install**: Follow the installation instructions specific to your operating system.
+3. **Start the Model**:
+   - On Windows:
+     ```sh
+     ollama run llama3
+     ```
+   - On macOS:
+     ```sh
+     /Applications/Ollama.app/Contents/MacOS/Ollama run llama3
+     ```
+
+4. **Verify the Setup**: Use the following `curl` command in Command Prompt to verify that the model is running correctly:
+   ```sh
+   curl -X POST http://localhost:11434/api/chat -H "Content-Type: application/json" -d "{\"model\": \"llama3\", \"messages\": [{\"role\": \"user\", \"content\": \"Why is the sky blue?\"}], \"stream\": false}"
+
 
