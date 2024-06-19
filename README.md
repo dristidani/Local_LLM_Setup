@@ -53,5 +53,5 @@ The setup process includes downloading, installing, and running the models local
 ### License
 This project is licensed under the MIT License.
 
-##Author
+## Author
 Dristi Dani
