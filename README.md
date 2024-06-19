@@ -15,7 +15,7 @@ The setup process includes downloading, installing, and running the models local
 
 ### Setting Up Llama3
 
-1. **Download Llama3**: Follow the download link for your system from the [Ollama Llama3 GitHub repository](https://github.com/Ollama/llama3)(https://ollama.com/download/OllamaSetup.exe).
+1. **Download Llama3**: Follow the download link for your system from the [Ollama Llama3 GitHub repository](https://github.com/Ollama/llama3) (https://ollama.com/download/OllamaSetup.exe).
 2. **Install**: Follow the installation instructions specific to your operating system.
 3. **Start the Model**:
    - On Windows:
