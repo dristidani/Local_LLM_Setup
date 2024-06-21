@@ -49,6 +49,46 @@ The setup process includes downloading, installing, and running the models local
    ```sh
    curl -X POST http://localhost:11435/api/chat -H "Content-Type: application/json" -d "{\"model\": \"gemma:2b\", \"messages\": [{\"role\": \"user\", \"content\": \"What is the capital of France?\"}],\"stream\":false}"
 
+
+### Interacting with Local LLM via Chatbot using StreamLit
+- Download the llm_chatbot.py file in a folder
+
+#### Set Up a Virtual Environment
+- Windows
+```sh
+python -m venv venv
+venv\Scripts\activate
+```
+
+- macOS/Linux
+```sh
+python3 -m venv venv
+source venv/bin/activate
+```
+
+#### Install Requirements
+```sh
+pip install -r requirements.txt
+```
+
+### Start the LLM Model
+Llama3 Model
+Open Command Prompt or Terminal.
+Start the Llama3 model server:
+```sh
+ollama serve --port 11434
+```
+
+#### Run the Chatbot Application
+Open a new Command Prompt or Terminal and run:
+```sh
+streamlit run llm_chatbot.py
+```
+
+#### Interact with the Chatbot
+Open your web browser and go to http://localhost:8501. You can now interact with the chatbot.
+
+
 ### License
 This project is licensed under the MIT License.
 
